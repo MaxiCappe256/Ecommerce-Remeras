@@ -1,0 +1,43 @@
+@use '../utils/variables' as *;
+
+body {
+  font-family: $font-family-base, sans-serif;
+  font-size: $font-size-body;
+  line-height: 1.5;
+  color: $color-gray-dark;
+  background-color: $color-gray-light;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 3rem 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1rem;
+
+}
+
+p {
+  font-size: .8rem;
+}
+
+a {
+  font-size: 1rem;
+}

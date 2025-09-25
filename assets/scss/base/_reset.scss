@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit; // hereda la tipografía del body
+  color: inherit; // hereda color
+  margin: 0; // resetea márgenes
+  padding: 0; // resetea padding
+  border: none; // sin bordes por defecto
+  background: none; // sin fondos raros
+  outline: none; // saca borde azul al hacer focus
+  box-sizing: border-box; // respeta padding/border en width/height
+}
+
+/* Evita que el button tenga estilos raros */
+button {
+  background: none;
+  cursor: pointer;
+}
+
+/* Elimina flechitas de number en Chrome */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Elimina flecha default de select en algunos navegadores */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+}
+
+/* Normaliza textarea */
+textarea {
+  resize: vertical; // solo vertical
+  overflow: auto;
+}

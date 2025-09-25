@@ -1,0 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Evita que el button tenga estilos raros */
+button {
+  background: none;
+  cursor: pointer;
+}
+
+/* Elimina flechitas de number en Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Elimina flecha default de select en algunos navegadores */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+}
+
+/* Normaliza textarea */
+textarea {
+  resize: vertical;
+  overflow: auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 3rem 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+a {
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
+
+header {
+  padding: 1rem;
+  background-color: #ccc;
+  border-bottom: 1px solid gray;
+  position: sticky;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .logo {
+  max-width: 100px;
+}
+header nav .links {
+  display: flex;
+  gap: 1rem;
+}
+header .submenu {
+  display: block;
+  position: absolute;
+  background-color: white;
+  margin-top: 1rem;
+  transition: all 250ms ease;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+header .submenu.show {
+  opacity: 1;
+  display: block;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.footer {
+  padding: 2rem 0;
+  background-color: #ccc;
+  text-align: center;
+}
+.footer p {
+  font-size: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  justify-content: center;
+}
+.grid .producto {
+  padding: 1rem;
+  background-color: #ccc;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.grid .producto .container-img {
+  padding: 1rem;
+  max-width: 20rem;
+  margin: 0 auto;
+  border-bottom: 1px solid gray;
+}
+.grid .producto .container-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.grid .producto .descripcion {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #999;
+  font-size: 1.2rem;
+}
+.form input {
+  border: 1px solid #999;
+  padding: 0.6rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.form input:not([type=submit]):last-of-type {
+  margin-bottom: 0;
+}
+.form .btn {
+  margin: 0;
+}
+.form a {
+  display: block;
+  margin: 1rem 0 auto;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.second-form {
+  gap: 0.2rem;
+  font-size: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: rgb(25.5, 25.5, 25.5);
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: #f5f5f5;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-secondary:hover {
+  background-color: rgb(219.5, 219.5, 219.5);
+}
+.btn-secondary:active {
+  transform: scale(0.98);
+}
+
+/*# sourceMappingURL=style.css.map */

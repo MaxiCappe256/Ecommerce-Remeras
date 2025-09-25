@@ -1,0 +1,29 @@
+// Breakpoints
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+// Botón reutilizable
+@mixin button($bg-color, $text-color: #fff, $font-size: 1rem) {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: $bg-color;
+  color: $text-color;
+  font-size: $font-size;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}

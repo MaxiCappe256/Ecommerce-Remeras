@@ -1,0 +1,9 @@
+@use '../utils/variables' as *;
+.footer {
+  padding: 2rem 0;
+  background-color: $color-footer-header;
+  text-align: center;
+  p {
+    font-size: 1rem;
+  }
+}

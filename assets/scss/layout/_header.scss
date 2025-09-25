@@ -1,0 +1,44 @@
+@use '../utils/variables' as *;
+header {
+  padding: 1rem;
+  background-color: $color-footer-header;
+  border-bottom: 1px solid gray;
+  position: sticky;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .logo {
+      max-width: 100px;
+    }
+
+    .links {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  .submenu {
+    display: block;
+    position: absolute;
+    background-color: white;
+    margin-top: 1rem;
+    transition: all 250ms ease;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+
+    &.show {
+      opacity: 1;
+      display: block;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+  }
+
+
+
+}

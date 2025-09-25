@@ -1,0 +1,39 @@
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 3rem;
+  justify-content: center;
+
+  .producto {
+    padding: 1rem;
+    background-color: #ccc;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .container-img {
+      padding: 1rem;
+      max-width: 20rem;
+      margin: 0 auto;
+      border-bottom: 1px solid gray;
+
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+    }
+
+    .descripcion {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+}
