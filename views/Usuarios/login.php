@@ -1,7 +1,7 @@
 <?php require_once 'views/layout/header.php'; ?>
 
 
-<main class="section container">
+<main class="login container">
   <h1>Inicia Sessión</h1>
   <form class="form" action="" method="POST">
     <label for="email">Email:</label>

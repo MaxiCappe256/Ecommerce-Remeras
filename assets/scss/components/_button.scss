@@ -6,5 +6,5 @@
 }
 
 .btn-secondary {
-  @include button($color-gray-light, $color-black);
+  @include button($color-gray-light, $color-black, 1rem, 1px solid $color-gray);
 }

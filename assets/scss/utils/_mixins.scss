@@ -6,10 +6,10 @@
 }
 
 // Botón reutilizable
-@mixin button($bg-color, $text-color: #fff, $font-size: 1rem) {
+@mixin button($bg-color, $text-color: #fff, $font-size: 1rem, $border: none, $text-transform: lowercase) {
   display: inline-block;
   padding: 0.8rem 1.6rem;
-  border: none;
+  border: $border;
   text-align: center;
   border-radius: 0.5rem;
   background-color: $bg-color;
@@ -17,6 +17,7 @@
   font-size: $font-size;
   font-weight: 600;
   cursor: pointer;
+  text-transform: $text-transform;
   transition: background-color 0.3s ease;
 
   &:hover {

@@ -1,6 +1,6 @@
 <?php require_once 'views/layout/header.php'; ?>
 
-<main class="container section">
+<main class=" register container">
 
   <h1>Registrate</h1>
 

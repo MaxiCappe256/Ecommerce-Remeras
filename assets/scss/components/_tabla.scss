@@ -1,0 +1,38 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as*;
+
+.tabla {
+  border: 1px solid $color-gray;
+  padding: 2rem;
+  margin: 0 auto;
+  border-radius: 10px;
+  border-collapse: collapse;
+  width: 100%;
+
+  td, th {
+    padding: 1.5rem;
+    border-bottom: 1px solid $color-gray;
+  }
+
+  .titulo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .fila {
+    font-size: 1.3rem;
+  }
+
+  // Botón eliminar
+  .btn-eliminar {
+    @include button(rgb(124, 0, 0), #fff, 1rem, $text-transform: uppercase);
+    margin-right: 1rem;
+  }
+
+  // Botón editar
+  .btn-editar {
+    @include button(rgb(0, 110, 0), #fff, 1rem, $text-transform: uppercase);
+  }
+}
+
+//@mixin button($bg-color, $text-color: #fff, $font-size: 1rem, $border: none) {

@@ -21,7 +21,11 @@
 
 // pages
 @use 'pages/index';
-@use 'pages/login.scss';
+@use 'pages/login';
+@use 'pages/dashboard';
+@use 'pages/register';
+
 // components
 @use 'components/form';
 @use 'components/button';
+@use 'components/tabla';

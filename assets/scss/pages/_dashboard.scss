@@ -1,0 +1,9 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+.dashboard {
+  .btn {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+}
